@@ -6,3 +6,7 @@ services:
       dockerfile: ./containers/webserver/Dockerfile
     ports:
       - "5001:5001"
+  database:
+    build:
+      context: ./
+      dockerfile: ./containers/database/Dockerfile
