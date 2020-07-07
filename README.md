@@ -9,6 +9,11 @@ See <http://github.com/HenryFBP/2019-team-07f/> for the non-Dockerized version, 
 ## Building
 
     cd docker
+    docker-compose build
+
+## Running
+
+    cd docker
     docker-compose up
 
 ## Using the app
