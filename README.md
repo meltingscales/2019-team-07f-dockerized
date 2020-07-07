@@ -14,3 +14,7 @@ See <http://github.com/HenryFBP/2019-team-07f/> for the non-Dockerized version, 
 ## Using the app
 
 Go to <http://localhost:5001/>
+
+## Misc
+
+<https://www.portainer.io/>
