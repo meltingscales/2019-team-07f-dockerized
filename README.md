@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/HenryFBP/2019-team-07f-dockerized.svg?branch=master)](https://travis-ci.org/HenryFBP/2019-team-07f-dockerized)
+
 # 2019-team-07f-dockerized
 
 A Dockerized school project.
