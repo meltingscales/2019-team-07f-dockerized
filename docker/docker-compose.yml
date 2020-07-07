@@ -10,6 +10,4 @@ services:
     build:
       context: ./
       dockerfile: ./containers/database/Dockerfile
-    environment: 
-      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
-      TEST: ${TEST}
+    env_file: database.env

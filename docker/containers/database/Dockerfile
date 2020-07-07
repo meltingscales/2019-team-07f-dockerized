@@ -16,6 +16,8 @@ RUN bash install-general.sh
 COPY scripts/setup/install-netdata.sh /app/docker/scripts/setup/install-netdata.sh
 RUN bash install-netdata.sh
 
+# TODO: These should NOT be in this file. Figure out how .env files work ASAP.
+# TODO: Try K8s secrets. Maybe deploy to K8s cluster.
 ENV MYSQL_PASSWORD="uhohstinky"
 ENV TEST="Uh oh, stinky!"
 
