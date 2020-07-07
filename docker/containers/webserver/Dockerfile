@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-LABEL maintainer="Henry Post, http://henryfbp.me/"
+LABEL maintainer="Henry Post, resplendent.falconeer@gmail.com, http://henryfbp.me/"
 
 RUN apt-get update
 
