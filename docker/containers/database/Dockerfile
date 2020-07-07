@@ -16,6 +16,9 @@ RUN bash install-general.sh
 COPY scripts/setup/install-netdata.sh /app/docker/scripts/setup/install-netdata.sh
 RUN bash install-netdata.sh
 
+ENV MYSQL_PASSWORD="uhohstinky"
+ENV TEST="Uh oh, stinky!"
+
 # should print out test message in .env file
 RUN echo Test: $TEST
 
