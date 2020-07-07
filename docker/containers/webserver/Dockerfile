@@ -6,7 +6,11 @@ RUN apt-get update
 
 RUN apt-get install -y python
 
-#EXPOSE 5001 
+COPY ../scripts/ /app/docker/scripts/
+
+RUN bash /app/docker/scripts/init.sh
+
+RUN bash /app/docker/scripts/install-general.sh
 
 ENTRYPOINT [ "python" ] 
 
