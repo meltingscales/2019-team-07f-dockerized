@@ -25,3 +25,14 @@ Go to <http://localhost:5001/>
 <https://www.portainer.io/>
 
 <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/>
+
+## Removing all containers
+
+This will cause you to have to rebuild ALL containers.
+
+Only use if you need to.
+
+Run `docker ps -a -q` to see all Docker containers.
+
+    docker stop $(docker ps -a -q)
+    docker rm $(docker ps -a -q)
