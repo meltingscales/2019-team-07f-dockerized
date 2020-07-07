@@ -1,0 +1,14 @@
+language: java
+
+services:
+  - docker
+
+before_install:
+  - pushd docker
+  - docker-compose build
+  - popd
+  
+script:
+  - pushd docker
+  - docker-compose up
+  - popd
