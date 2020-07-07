@@ -1,6 +1,8 @@
 version: '3'
 services:
-  web:
-    build: containers/webserver
+  webserver:
+    build:
+      context: ./
+      dockerfile: ./containers/webserver/Dockerfile
     ports:
       - "5001:5001"

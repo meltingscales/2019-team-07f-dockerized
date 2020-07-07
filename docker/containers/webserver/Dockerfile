@@ -6,7 +6,7 @@ RUN apt-get update
 
 RUN apt-get install -y python
 
-COPY ../scripts/ /app/docker/scripts/
+COPY scripts/ /app/docker/scripts/
 
 RUN bash /app/docker/scripts/init.sh
 
