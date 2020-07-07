@@ -23,3 +23,5 @@ Go to <http://localhost:5001/>
 ## Misc
 
 <https://www.portainer.io/>
+
+<https://docs.docker.com/develop/develop-images/dockerfile_best-practices/>

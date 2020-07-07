@@ -4,14 +4,21 @@ LABEL maintainer="Henry Post, resplendent.falconeer@gmail.com, http://henryfbp.m
 
 RUN apt-get update
 
-RUN apt-get install -y python
-
 COPY scripts/ /app/docker/scripts/
 
-RUN bash /app/docker/scripts/init.sh
+# Install dependencies
+WORKDIR /app/docker/scripts/
+RUN bash init.sh
+RUN bash install-general.sh
+RUN bash install-netdata.sh
+RUN bash install-java.sh
+RUN bash install-ffmpeg.sh
+RUN bash install-maven.sh
+RUN bash install-mysql-client.sh
+RUN bash remove-mysql-server.sh
+RUN bash install-python.sh
+RUN bash install-tomcat.sh
 
-RUN bash /app/docker/scripts/install-general.sh
-
-ENTRYPOINT [ "python" ] 
+ENTRYPOINT [ "python2" ]
 
 CMD [ "-m","SimpleHTTPServer","5001" ] 
