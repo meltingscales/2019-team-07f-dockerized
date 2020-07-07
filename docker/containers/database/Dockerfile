@@ -16,5 +16,8 @@ RUN bash install-general.sh
 COPY scripts/setup/install-netdata.sh /app/docker/scripts/setup/install-netdata.sh
 RUN bash install-netdata.sh
 
+# should print out test message in .env file
+RUN echo Test: $TEST
+
 COPY scripts/setup/install-mysql.sh /app/docker/scripts/setup/install-mysql.sh
-RUN bash install-mysql.sh
+RUN bash install-mysql.sh 

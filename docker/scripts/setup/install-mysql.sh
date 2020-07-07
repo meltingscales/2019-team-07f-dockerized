@@ -4,6 +4,7 @@ echo "Installing MySQL."
 
 if [[ -z $MYSQL_PASSWORD ]]; then
   echo "MYSQL_PASSWORD must not be empty. Did you forget to pass arguments/environment variables?"
+  echo ${MYSQL_PASSWORD}
   exit 1
 fi
 
