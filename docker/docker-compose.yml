@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    build: containers/web
+    ports:
+      - "5001:5001"
