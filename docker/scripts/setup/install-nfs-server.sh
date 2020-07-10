@@ -2,4 +2,4 @@
 
 echo "Installing NFS server."
 
-sudo apt install -y nfs-kernel-server
+apt install -y nfs-kernel-server
