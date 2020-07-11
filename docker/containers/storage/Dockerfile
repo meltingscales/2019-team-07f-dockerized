@@ -18,3 +18,7 @@ RUN bash install-netdata.sh
 
 COPY scripts/setup/install-nfs-server.sh /app/docker/scripts/setup/install-nfs-server.sh
 RUN bash install-nfs-server.sh
+
+# Wait forever
+ENTRYPOINT [ "tail" ]
+CMD [ "-f", "/dev/null" ]
