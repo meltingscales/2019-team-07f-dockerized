@@ -6,6 +6,9 @@ apt-get update
 
 apt install -y dos2unix
 
+# Install ping as it may not be installed
+apt-get install iputils-ping
+
 # Install add-apt-repository command.
 apt-get install -y software-properties-common
 apt-get install -y debconf-utils
