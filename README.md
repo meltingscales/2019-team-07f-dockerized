@@ -36,3 +36,10 @@ Run `docker ps -a -q` to see all Docker containers.
 
     docker stop $(docker ps -a -q)
     docker rm $(docker ps -a -q)
+
+## SSHing to a specific container
+
+    docker exec -it 2019team07f-storage    /bin/bash
+    docker exec -it 2019team07f-webserver  /bin/bash
+    docker exec -it 2019team07f-database   /bin/bash
+    ...etc
