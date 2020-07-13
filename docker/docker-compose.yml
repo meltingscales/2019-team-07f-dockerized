@@ -1,16 +1,22 @@
 version: '3'
 services:
+
   storage:
+    container_name: 2019team07f-storage
     build:
       context: ./
       dockerfile: ./containers/storage/Dockerfile
+
   webserver:
+    container_name: 2019team07f-webserver
     build:
       context: ./
       dockerfile: ./containers/webserver/Dockerfile
     ports:
       - "5001:5001"
+
   database:
+    container_name: 2019team07f-database
     build:
       context: ./
       dockerfile: ./containers/database/Dockerfile
