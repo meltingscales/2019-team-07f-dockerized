@@ -27,3 +27,7 @@ RUN echo Test: $TEST
 
 COPY scripts/setup/install-mysql.sh /app/docker/scripts/setup/install-mysql.sh
 RUN bash install-mysql.sh 
+
+# Wait forever
+ENTRYPOINT [ "tail" ]
+CMD [ "-f", "/dev/null" ]
